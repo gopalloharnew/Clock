@@ -2,11 +2,187 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: hsl(0, 0%, 20%);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: monospace;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clock {
+  width: 92vmin;
+  height: 92vmin;
+  border: 1vmin solid hsl(190, 100%, 30%);
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 50%;
+  position: relative;
+}
+
+/* NUMBERS */
+
+.num {
+  width: 10vmin;
+  height: 10vmin;
+  font-size: 8vmin;
+  position: absolute;
+  /* background-color: red; */
+  color: white;
+  z-index: 100;
+}
+
+.num-12 {
+  top: 0vmin;
+  left: 40vmin;
+}
+
+.num-6 {
+  top: 80vmin;
+  left: 40vmin;
+}
+
+.num-3 {
+  top: 40vmin;
+  left: 80vmin;
+}
+
+.num-9 {
+  top: 40vmin;
+  left: 0vmin;
+}
+
+/* DAHSES */
+
+.dash {
+  width: 80vmin;
+  height: 1vmin;
+  border-radius: 50%;
+  position: absolute;
+  justify-content: space-between;
+  z-index: 101;
+  top: 44.5vmin;
+  left: 5vmin;
+}
+
+.dash div {
+  width: 3vmin;
+  height: 1vmin;
+  border-radius: 1vmin;
+  flex-direction: row;
+  background-color: white;
+}
+
+.dash-1 {
+  transform: rotate(30deg);
+}
+
+.dash-2 {
+  transform: rotate(60deg);
+}
+
+.dash-3 {
+  transform: rotate(-30deg);
+}
+
+.dash-4 {
+  transform: rotate(-60deg);
+}
+
+/* HAND CIRCLES */
+
+.hand-circle {
+  position: absolute;
+}
+
+.hand-circle-1 {
+  width: 8vmin;
+  height: 8vmin;
+  border-radius: 4vmin;
+  top: 41vmin;
+  left: 41vmin;
+  z-index: 110;
+  background-color: hsl(0, 0%, 30%);
+}
+
+.hand-circle-2 {
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 3vmin;
+  top: 42vmin;
+  left: 42vmin;
+  z-index: 130;
+  background-color: hsl(0, 0%, 40%);
+}
+
+.hand-circle-3 {
+  width: 4vmin;
+  height: 4vmin;
+  border-radius: 2vmin;
+  top: 43vmin;
+  left: 43vmin;
+  z-index: 150;
+  background-color: hsl(0, 0%, 50%);
+}
+
+.hand-circle-4 {
+  background-color: hsl(0, 0%, 20%);
+  width: 2vmin;
+  height: 2vmin;
+  border-radius: 1vmin;
+  top: 44vmin;
+  left: 44vmin;
+  z-index: 170;
+}
+
+/* HANDS */
+
+.hand {
+  position: absolute;
+  transform-origin: bottom;
+}
+
+.hand-1 {
+  background-color: rgb(255, 255, 255);
+  z-index: 120;
+  height: 25vmin;
+  width: 3vmin;
+  border-radius: 3vmin;
+  top: 20vmin;
+  left: 43.5vmin;
+  transform: rotate(0deg);
+}
+
+.hand-2 {
+  background-color: rgb(34, 218, 95);
+  z-index: 140;
+  height: 30vmin;
+  width: 2vmin;
+  border-radius: 1vmin;
+  top: 15vmin;
+  left: 44vmin;
+  transform: rotate(0deg);
+}
+
+.hand-3 {
+  background-color: hsl(0, 100%, 50%);
+  z-index: 160;
+  height: 35vmin;
+  width: 1vmin;
+  border-radius: 1vmin;
+  top: 10vmin;
+  left: 44.5vmin;
+  transform: rotate(00deg);
+}
+
+.hand-4 {
+  display: none;
 }
