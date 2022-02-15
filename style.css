@@ -148,10 +148,10 @@ body {
 .hand {
   position: absolute;
   transform-origin: bottom;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .hand-1 {
-  background-color: rgb(255, 255, 255);
   z-index: 120;
   height: 25vmin;
   width: 3vmin;
@@ -162,7 +162,6 @@ body {
 }
 
 .hand-2 {
-  background-color: rgb(34, 218, 95);
   z-index: 140;
   height: 30vmin;
   width: 2vmin;
@@ -173,7 +172,6 @@ body {
 }
 
 .hand-3 {
-  background-color: hsl(0, 100%, 50%);
   z-index: 160;
   height: 35vmin;
   width: 1vmin;
