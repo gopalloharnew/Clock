@@ -149,6 +149,7 @@ body {
   position: absolute;
   transform-origin: bottom;
   background-color: hsl(0, 0%, 100%);
+  border: 0.2vmin solid hsl(0, 0%, 50%);
 }
 
 .hand-1 {
